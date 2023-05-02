@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Treasure Hunt Dashboard</title>
+	
+</head>
+<style>
+	header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+   
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.card a:hover {
+    background-color: #3e8e41;
+}
+   
+</style>
+<script>
+function redirect() {
+    window.location.href = "puzzle1.html";
+}
+
+</script>
+<body>
+	 <header>Dashboard</header>
+	 <form action="/puzzle1" method="post">
+	<div class="container">
+		<div class="card">
+			<h2>Treasure Hunt</h2>
+			<p>Test your Soft skills</p>
+            <h2> This game is based on hindu mythology</h2>
+			<button type="submit"> Challenge</button>
+		</div>
+		</div>
+	</form>
+		</body>
+		</body>
+</body>
+</html>

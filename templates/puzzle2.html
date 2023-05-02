@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Question Form</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+       
+      }
+      form {
+        margin: auto;
+        width: 50%;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+      input[type=text] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Question Form</h1>
+    <form method="post" action="/puzzleans2">
+      <label for="question">Question2:</label>
+      <h2>Who is the warrior who can end mahabharata with 3 arrows?</h2>
+      <!-- <label for="answer">Answer:</label>
+      <input type="text" id="answer" name="answer2" required> -->
+      <input type="radio" id="red" name="answer2" value="krishna">
+  <label for="red">Krishna</label><br>
+  <input type="radio" id="green" name="answer2" value="arjuna">
+  <label for="green">Arjuna</label><br>
+  <input type="radio" id="blue" name="answer2" value="barbarik">
+  <label for="blue">Barbarik</label><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

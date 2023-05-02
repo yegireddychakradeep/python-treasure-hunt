@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Treasure Hunt - Login</title>
+   <style>
+    h1{
+    color: white;
+  }
+  body {
+    font-family: Arial, sans-serif;
+   
+    background: url('https://c4.wallpaperflare.com/wallpaper/302/513/132/place-compass-old-map-where-the-treasure-wallpaper-preview.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Style the login form */
+  .login {
+    margin: 5% auto 0;
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #ddd;
+  }
+  
+  /* Style the input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Style the submit button */
+   /* button[type=submit] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; 
+  }  */
+  
+  /* Center the submit button */
+    /* .button-center {
+    display: flex;
+    justify-content: center; 
+  }  */ 
+  
+    .button-container {
+display: flex;
+justify-content: space-between;
+}
+
+.sign-in-btn,
+.sign-up-btn {
+padding: 10px 20px;
+font-size: 18px;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+}
+
+.sign-in-btn {
+background-color: #007bff;
+color: #fff;
+}
+
+.sign-up-btn {
+background-color: #007bff;
+color: #fff;
+border: 1px solid #007bff;
+}  */
+
+
+   </style>
+
+    
+  </head>
+  <body>
+   
+    <h1 style="text-align:center;">Treasure Hunt(Challenge yourself)</h1>
+    <div class="login">
+      <h2>Login or Create an Account</h2>
+      <form action="/login" method="POST">
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="username" placeholder="Enter your email address"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+        <div class="button-container">
+          <button class="sign-in-btn ">Sign In</button>
+          
+        </form>
+        <form action="/create" method="POST">
+          <button class="sign-up-btn" >Sign Up</button>
+        </div>
+         </form>
+      </form>
+      </div>
+        
+        
+      
+     
+    </div>
+  </body>
+</html>

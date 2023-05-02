@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Elimination Page</title>
+    <style>
+      /* Add some style to the page */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        color: #FF5733;
+      }
+      p {
+        text-align: center;
+        font-size: 20px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <form action="/end",method="post">
+      <h1>Eliminated!</h1>
+      <p>Sorry, you have meet a dead end  as you have answered too many wrong  answers or took more time.</p>
+    <h2>your  Final Score:{{yourscore}}</h2>
+      <button type="submit">End Game</button>
+      </form>
+    </div>
+   
+  </body>
+</html>

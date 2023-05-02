@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Question Form</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+       
+      }
+      form {
+        margin: auto;
+        width: 50%;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+      input[type=text] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Question Form</h1>
+    <form method="post" action="/puzzleans4">
+      <label for="question">Question4:</label>
+      <h2>Who designed the padmavyuha in mahabharata war?</h2>
+      <input type="radio" id="red" name="answer4" value="drona">
+      <label for="red">Drona</label><br>
+      <input type="radio" id="blue" name="answer4" value="krishna">
+      <label for="blue">Krishna</label><br>
+      <input type="radio" id="green" name="answer4" value="bheeshma">
+      <label for="green">Bheeshma</label><br>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Question Form</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+     
+      }
+      form {
+        margin: auto;
+        width: 50%;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+      input[type=text] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Question Form</h1>
+    <form method="post" action="/puzzleans1">
+      <label for="question">Question1:</label>
+      <h2>Who is the warrior son of dronacharya?</h2>
+      <input type="radio" id="red" name="answer" value="krishna">
+      <label for="red">Krishna</label><br>
+      <input type="radio" id="green" name="answer" value="yudhishtira">
+      <label for="green">Yudhishtira</label><br>
+      <input type="radio" id="blue" name="answer" value="ashwathama">
+      <label for="blue">Ashwathama</label><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
+
+    <!-- <form method="post" action="/puzzleans1">
+      <label for="question">Question:</label>
+      <input type="text" id="question" name="answer" required>
+      <br>
+      <button type="submit">Submit</button>
+    </form> -->
+ 
