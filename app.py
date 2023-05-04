@@ -46,7 +46,7 @@ def login():
     
     # Validate user's login information
 #     user = table.query.filter_by(username=username).first()
-    if  (user =="root" and password=="root"):
+    if  (username =="root" and password=="root"):
         return render_template("dashboard.html")
     else:
         
