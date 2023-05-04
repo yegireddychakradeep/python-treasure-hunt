@@ -1,5 +1,5 @@
 from flask import request, redirect, url_for,render_template,Response, g
-
+# from flask_sqlalchemy import SQLAlchemy
 from flask import Flask
 from flask import *
 import time
@@ -45,8 +45,8 @@ def login():
     password = request.form['password']
     
     # Validate user's login information
-#     user = table.query.filter_by(username=username).first()
-    if  (username =="root" and password=="root"):
+    # user = table.query.filter_by(username=username).first()
+    if username=="root" and password=="root":
         return render_template("dashboard.html")
     else:
         
@@ -66,9 +66,9 @@ def signup():
         password = request.form['password']
         confirm_password=request.form['confirm_password']
         email = request.form['email']
-#         entry = table(username=username,  password = password, email = email )
-#         db.session.add(entry)
-#         db.session.commit()
+        # entry = table(username=username,  password = password, email = email )
+        # db.session.add(entry)
+        # db.session.commit()
     return render_template('dashboard.html')
         # # Validate the form data
         # if password==confirm_password:
