@@ -7,14 +7,14 @@ from datetime import datetime
 
 app = Flask(__name__)
 app.secret_key = "secret key"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/flask'
-db = SQLAlchemy(app)
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/flask'
+# db = SQLAlchemy(app)
 
-class table(db.Model):
-    sno = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(80), nullable=False)
-    password = db.Column(db.String(12), nullable=False)
-    email = db.Column(db.String(20), nullable=False)
+# class table(db.Model):
+#     sno = db.Column(db.Integer, primary_key=True)
+#     username = db.Column(db.String(80), nullable=False)
+#     password = db.Column(db.String(12), nullable=False)
+#     email = db.Column(db.String(20), nullable=False)
 
 
 
@@ -45,8 +45,8 @@ def login():
     password = request.form['password']
     
     # Validate user's login information
-    user = table.query.filter_by(username=username).first()
-    if user is not None:
+#     user = table.query.filter_by(username=username).first()
+    if  (user =="root" ans password=="root"):
         return render_template("dashboard.html")
     else:
         
@@ -66,9 +66,9 @@ def signup():
         password = request.form['password']
         confirm_password=request.form['confirm_password']
         email = request.form['email']
-        entry = table(username=username,  password = password, email = email )
-        db.session.add(entry)
-        db.session.commit()
+#         entry = table(username=username,  password = password, email = email )
+#         db.session.add(entry)
+#         db.session.commit()
     return render_template('dashboard.html')
         # # Validate the form data
         # if password==confirm_password:
